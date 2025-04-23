@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import MapView, { Marker } from 'react-native-maps';
 import GetLocation, { isLocationError, Location, LocationErrorCode } from 'react-native-get-location';
-//Mapbox.setAccessToken('Tk8rWhpHLNwuv2Ak2rg4');
+//Mapbox.setAccessToken('');
 export default function TrackScreen() {
     const [userLocation, setuserLocation] = useState<Location | { latitude: 7586, longitude: 8575, accuracy: 0, altitude: 0, speed: 0, time: 0 }>({ latitude: 7586, longitude: 8575, accuracy: 0, altitude: 0, speed: 0, time: 0 });
     const [error, setError] = useState<LocationErrorCode | null>(null);
